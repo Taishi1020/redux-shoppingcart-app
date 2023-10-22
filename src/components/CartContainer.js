@@ -23,13 +23,13 @@ const CartContainer = () => {
       </header>
       <div>
         {cartItems.map((item) => {
-          return <CartItem key={item.id} {...item}/>;
+          return <CartItem key={item.id} {...item} />;
         })}
       </div>
       <footer>
         <hr />
         <div className="cart-total">
-          <h4>
+          <h4 className="item-price">
             合計<span>{total}円</span>
           </h4>
         </div>
